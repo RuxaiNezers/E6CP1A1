@@ -11,15 +11,19 @@
 </table>
 
 =end
-
-	puts '<table>'
-	puts '	<tbody>'
-	puts '		<tr>'	
-	for	i in 1..3
-		puts "			<td> #{i} </td>"
-	end			
-	puts '		</tr>'
-	puts '	</tbody>'
-	puts '</table>'	
 		
-	
+ar = ['<table>', '	<tbody>','		<tr>','','		</tr>','	</tbody>', '</table>' ]
+
+ar.each_with_index do |valor,i|
+	if i<3
+		puts valor
+	end
+	if i==3
+		for	a in 1..3
+			puts "			<td> #{a} </td>"
+		end	
+	end
+	if i>3
+		puts valor
+	end
+end	
