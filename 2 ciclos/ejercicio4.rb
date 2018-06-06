@@ -11,15 +11,14 @@ a = 5
 b = ''
 
 a.times do |x|
-  b = '<li> hola </li>'
+  
   if x==0
-  	puts'<ul>'
+  	b+="<ul>\n"
   end
-
-  puts b
-
+	
   if x==4
-  	puts'</ul>'
+  	b+="</ul>"
   end
+  b += "<li> hola </li> \n"
 end
 

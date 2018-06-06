@@ -2,3 +2,6 @@
 # la tabla de multiplicar del número ingresado. Debe repetir la operación hasta
 # que se ingrese un 0 (cero).
 # Ingrese un número (0 para salir): _
+
+puts 'ingrese un numero, 0 es para salir'
+valor = gets.chomp.
