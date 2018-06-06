@@ -4,12 +4,7 @@
 a = false
 b = false
 
-if a == true && b==true
-    puts 'Lograste A y B!'
-elsif (a==true && b==false)
-    puts 'Lograste A! Pero no B!'
-elsif a==false && b==true
-	puts 'Lograste B! Pero no A!'
-else		
-  puts 'No lograste A ni B!'
-end
+puts 'Lograste A y B!' if (a && b)
+puts 'Lograste A! Pero no B!' if (a && not(b))
+puts 'Lograste B! Pero no A!' if (not(a) && b)
+puts 'No lograste A ni B!' if(not(a) && not(b))

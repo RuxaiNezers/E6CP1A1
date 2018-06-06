@@ -4,11 +4,7 @@
 a = 'falso'
 b = 'verdadero'
 
-if a == 'verdadero'
-    puts ':)'
-elsif b == 'verdadero'
-    puts ':|'
-else
-    puts ':('
-
-end
+  puts ':)' if a == 'verdadero'
+  puts ':|' if b == 'verdadero'
+  puts ':(' if (a=='falso' && b=='falso')
+    
